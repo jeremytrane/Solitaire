@@ -1,11 +1,11 @@
 
 public class Card {
-	
+
 	private Rank rank;
 	private Suit suit;
 	private boolean isVisible = false;
-	String cardColour;
-	
+	private String cardColour;
+
 	public Card(Rank rank, Suit suit, boolean isVisible, String cardColour) {
 		this.rank = rank;
 		this.suit = suit;
@@ -20,15 +20,15 @@ public class Card {
 	public Suit getSuit() {
 		return suit;
 	}
-	
-    public boolean isVisible() {
+
+	public boolean isVisible() {
 		return isVisible;
 	}
 
 	public void setVisible(boolean isVisible) {
 		this.isVisible = isVisible;
 	}
-	
+
 	public String toString() {
 		return rank + " " + suit;
 	}
